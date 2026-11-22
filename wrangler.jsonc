@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "event-pro-casablanca",
+  "compatibility_date": "2026-01-01",
+  "pages_build_output_dir": "dist",
+  "vars": {
+    "APP_ENV": "production",
+    "TIMEZONE": "Africa/Casablanca",
+    "DEFAULT_CURRENCY": "MAD",
+    "DEFAULT_LOCALE": "fr-MA"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "event-pro-db",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "event-pro-media"
+    }
+  ]
+}
